@@ -37,6 +37,7 @@ public:
 
 	void setPhased(bool);
 	bool valid();
+	virtual ~PolymorphicIndividualsExtractor(){}
 
 protected:
 
