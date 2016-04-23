@@ -54,7 +54,7 @@ void PEDIndividualsExtractor::loadInput()
 	int a=stream.tellg();
 
 	//Debugging Piyush
-	std::cout<<a<<std::endl;
+	std::cout<<"a= "<<a<<std::endl;
 	int _count=0;
 	//Debugging Piyush
 	
@@ -70,7 +70,8 @@ void PEDIndividualsExtractor::loadInput()
 		
 	}
 	//Debugging Piyush
-	std::cout<<"FINAL"<<a<<std::endl;
+	std::cout<<"a ="<<a<<std::endl;
+	std::cout<<"_count ="<<_count<<std::endl;
 	//Debugging Piyush
 
 	cout<<"inputs loaded"<<endl;	
