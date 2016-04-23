@@ -76,10 +76,10 @@ void PEDIndividualsExtractor::getInput()
 	
 	//Debugging Piyush
 	std::cout<<"Debugging"<<std::endl;
-	std::cout<<filestream.good()<<std::endl;
-    std::cout<<filestream.eof()<<std::endl;
-    std::cout<<filestream.fail()<<std::endl;
-    std::cout<<filestream.bad()<<std::endl;
+	std::cout<<stream.good()<<std::endl;
+    std::cout<<stream.eof()<<std::endl;
+    std::cout<<stream.fail()<<std::endl;
+    std::cout<<stream.bad()<<std::endl;
 	//Debugging Piyush
 
 	stream.open( ped_file.c_str(),ios::in );
