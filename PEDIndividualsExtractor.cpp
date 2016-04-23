@@ -36,7 +36,13 @@ void PEDIndividualsExtractor::loadInput()
 		cout<<"file not opened corectly"<<endl;
 		return;
 	}
-
+	//Debugging Piyush
+	std::cout<<"Debugging"<<std::endl;
+	std::cout<<stream.good()<<std::endl;
+    std::cout<<stream.eof()<<std::endl;
+    std::cout<<stream.fail()<<std::endl;
+    std::cout<<stream.bad()<<std::endl;
+	//Debugging Piyush
 
 	if(!stream.good())
         {
@@ -46,14 +52,27 @@ void PEDIndividualsExtractor::loadInput()
 
 	string line;
 	int a=stream.tellg();
+
+	//Debugging Piyush
+	std::cout<<a<<std::endl;
+	int _count=0;
+	//Debugging Piyush
+	
 	while (getline(stream,line))
 	{
+		//Debugging Piyush
+		//Debugging Piyush
+		_count++;
 		stream.seekg(a);
 		getIndividuals();
 		stream.seekg(numberOfMarkers*4 + 1,ios::cur);
 		a=stream.tellg();
 		
 	}
+	//Debugging Piyush
+	std::cout<<"FINAL"<<a<<std::endl;
+	//Debugging Piyush
+
 	cout<<"inputs loaded"<<endl;	
 	individualsP->initialize();
 	stream.clear();
