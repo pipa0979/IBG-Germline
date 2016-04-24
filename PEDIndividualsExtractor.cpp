@@ -46,21 +46,22 @@ void PEDIndividualsExtractor::loadInput()
 	string line;
 
 
-	/* Debugging Piyush
-		int a=stream.tellg();
+	 //Debugging Piyush
+		unsigned long long a=stream.tellg();
 
 	while (getline(stream,line))
 	{
 		//Debugging Piyush
 		//Debugging Piyush
-		_count++;
 		stream.seekg(a);
 		getIndividuals();
 		stream.seekg(numberOfMarkers*4 + 1,ios::cur);
 		a=stream.tellg();
 		
 	}
-	*/
+	
+
+	/*
 while (getline(stream,line))
 		{
 			stream.seekg(stream.tellg());
@@ -68,7 +69,7 @@ while (getline(stream,line))
 			stream.seekg(numberOfMarkers*4 + 1,ios::cur);
 
 		}
-
+*/
 
 
 
